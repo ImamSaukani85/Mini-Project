@@ -1,0 +1,40 @@
+.sign {
+    margin-left: 300px;
+    margin-right: 50px;
+    background-image: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);
+    border: none;
+}
+h2 {
+    margin-top: 50px;
+    
+}
+.text-start {
+    margin-left: 45px;
+    color: white;
+}
+.card {
+    border: none;
+}
+.card:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0,3s ease !important;
+    -webkit-transform: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+img {
+    border-radius: 1%;
+}
+.about {
+    width: 400px;
+    margin-top: 50px;
+}
+.nav-link:hover {
+    color: red;
+}
+body {
+    max-height: 100vh;
+}
