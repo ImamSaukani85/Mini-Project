@@ -166,6 +166,10 @@
     let h2 = document.createElement("h2");
     h2.innerHTML = "My website is about designing, building, and maintaining your property.";
     document.body.appendChild(h2);
+      
+    setTimeout(() => {
+    document.body.removeChild(h2);
+    }, 3000);
     </script>
 </div>
 
