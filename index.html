@@ -140,7 +140,7 @@
     <div class="container">
       <div class="row text-center mb-3">
         <div class="col">
-          <h2>Feedback</h2>
+          <h2 id="feedback-text">Feedback</h2>
         </div>
       </div>
       <div class="row justify-content-center">
@@ -160,6 +160,14 @@
       </div>
     </div>
   </section>
+    
+    <div class="container">
+  <script>  
+    let h2 = document.createElement("h2");
+    h2.innerHTML = "My website is about designing, building, and maintaining your property.";
+    document.body.appendChild(h2);
+    </script>
+</div>
 
 <!-- Modal -->
 <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -279,5 +287,20 @@
 <footer class="bg-danger text-white text-center pb-5">
   <p>Created by <a href="https://www.instagram.com/imam_saukani/" class="text-white fw-bold">Muhammad Imam Saukani</a></p>
 </footer>
+    <script>
+
+console.log("by Tag Name : ", document.getElementsByTagName("h5"));
+console.log("by Tag Name : ", document.getElementsByTagName("h2"));
+
+
+  setTimeout(() => {
+    document.getElementsByTagName("h2")[1].innerHTML = "This is Our Service";
+  },3000 );
+
+  document.getElementById("feedback-text").onclick = () => {
+    alert("You Clicked Me")
+  }
+
+</script>
 </body>
 </html>
